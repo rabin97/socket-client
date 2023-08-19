@@ -1,5 +1,5 @@
-const socket = io("http://localhost:8000", { transports: ["polling"] });
-// const socket = io("https://send-message.onrender.com/", { transports: ['polling'] });
+// const socket = io("http://localhost:8000", { transports: ["polling"] });
+const socket = io("https://send-message.onrender.com/", { transports: ['polling'] });
 const sendContainer = document.getElementById("send-container");
 const messageInput = document.getElementById("messageImp");
 const messageContainer = document.querySelector(".container");
