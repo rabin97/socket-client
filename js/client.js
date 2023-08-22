@@ -8,7 +8,11 @@ const append = (message, position) => {
   const messageElement = document.createElement("div");
   messageElement.innerText = message;
   messageElement.classList.add("message");
-  messageElement.classList.add(position);
+  if (sender === names) {
+    messageElement.classList.add("right");
+  } else {
+    messageElement.classList.add("left");
+  }
   messageContainer.appendChild(messageElement);
 };
 
